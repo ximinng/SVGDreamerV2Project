@@ -34,13 +34,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Website Title -->
-    <title>Github Pages Template</title>
+    <title>SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG Generation</title>
     <!-- The description that appears when you share the link -->
-    <meta property="og:description" content="SVGDreamer: Text Guided SVG Generation with Diffusion Model"/>
+    <meta property="og:description"
+          content="SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG Generation"/>
     <!-- Used to display page descriptions in search results -->
-    <meta name="description" content="SVGDreamer, SVG generation, text-to-svg, text2svg">
+    <meta name="description" content="SVGDreamer, SVGDreamer++, SVGDreamerV2, SVG generation, text-to-svg, text2svg">
     <!-- favicon -->
-    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -48,71 +49,90 @@
     <hr>
     <!-- Paper Title -->
     <div class="container text-center">
-        <span class="title-font x-gradient-font">MyPaper:</span>
-        <a class="title-font text-body-emphasis"
-           href="#">
-            Paper Title
-        </a>
+        <span class="title-font x-gradient-font">SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG Generation</span>
     </div>
     <hr>
     <!-- author list -->
     <div class="container author text-center">
         <!-- authors -->
-        <div class="row gy-2"> <!-- 使用 gy-* 统一控制行间距 -->
-            <div class="col-12 col-md">
-                <a class="link" href="#">first author</a><sup>1</sup>
+        <div class="row gy-2">
+            <div class="col-12 col-md-2">
+                <a class="link" href="https://ximinng.github.io">Ximing Xing</a><sup>1</sup>
             </div>
-            <div class="col-12 col-md">
-                <p class="fs-5">second author<sup>1</sup></p>
+            <div class="col-12 col-md-2">
+                <a class="link" href="https://yuqian1023.github.io">Qian Yu</a><sup>1</sup>
             </div>
-            <div class="col-12 col-md">second author<sup>1</sup></div>
-        </div>
-        <div class="row" style="margin-top: -0.5rem;">
-            <div class="col-12 col-md">
-                <a class="link" href="#">first author</a><sup>2</sup>
+            <div class="col-12 col-md-2">Haitao Zhou<sup>1</sup></div>
+            <div class="col-12 col-md-2">Chuang Wang<sup>1</sup></div>
+            <div class="col-12 col-md-2">
+                <a class="link" href="https://hellojing89.github.io">Jing Zhang</a><sup>1</sup>
             </div>
-            <div class="col-12 col-md">second author<sup>2</sup></div>
+            <div class="col-12 col-md-2">
+                <a class="link" href="https://www.cs.hku.hk/people/academic-staff/dongxu">Dong Xu</a><sup>2</sup>
+            </div>
         </div>
         <!-- author organization -->
         <div class="row mt-3">
             <div class="col-12">
-                <sup>1</sup>Beihang University &nbsp;&nbsp;<sup>2</sup>Google Research
+                <sup>1</sup>Beihang University &nbsp;&nbsp;<sup>2</sup>The University of Hong Kong
             </div>
         </div>
     </div>
-    <!-- paper status -->
-    <div class="text-center" style="margin-top: 20px">
-        <h3>Paper status - Under Review</h3>
-    </div>
+    <!--    &lt;!&ndash; paper status &ndash;&gt;-->
+    <!--    <div class="text-center" style="margin-top: 20px">-->
+    <!--        <h3>Paper status - Under Review</h3>-->
+    <!--    </div>-->
     <!-- links -->
     <div class="text-center">
         <div class="row justify-content-md-center">
             <div id="links">
                 <div class="col col-lg-2">
-                    <a id="paper" href="#">Paper</a>
+                    <a id="arxiv" href="https://arxiv.org/abs/2411.17832">Paper</a>
                 </div>
                 <div class="col col-lg-2">
-                    <a id="arxiv" href="#">Arxiv</a>
+                    <a id="code" href="https://github.com/ximinng/SVGDreamerV2">Code</a>
                 </div>
                 <div class="col col-lg-2">
-                    <a id="code" href="#">Code</a>
+                    <a id="demo" href="https://huggingface.co/SVGRender">Space</a>
                 </div>
                 <div class="col col-lg-2">
-                    <a id="demo" href="#">Demo</a>
+                    <a id="code" href="https://github.com/QianYu-Lab/PyTorch-SVGRender">Render</a>
                 </div>
             </div>
         </div>
     </div>
     <br>
+
     <!-- teaser -->
     <div class="text-center">
         <figure class="figure">
-            <img src="assets/beautiful_teaser.png" class="img-thumbnail figure-img img-fluid rounded"
-                 alt="beautiful teaser">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            <img src="assets/gallery_paper.png" class="figure-img img-fluid rounded"
+                 width="90%" height="auto"
+                 alt="SVGDreamer teaser">
+            <figcaption class="figure-caption">
+                Given a text prompt, SVGDreamer++ can generate a <i>variety</i> of vector graphics. SVGDreamer++ is a
+                versatile
+                tool that can work with various vector styles without being limited to a specific prompt suffix. We
+                utilize various colored suffixes to indicate different styles. The style is governed by vector
+                primitives.
+            </figcaption>
+        </figure>
+
+        <figure class="figure">
+            <img src="assets/editable_illustrate.png" class="figure-img img-fluid rounded"
+                 width="90%" height="auto"
+                 alt="SVGDreamer teaser">
+            <figcaption class="figure-caption">
+                Our proposed tool, SVGDreamer++, excels at generating editable vector graphics.
+            </figcaption>
         </figure>
     </div>
 
+    <!-- TL;DR -->
+    <div class="text-center" style="margin-top: 20px; font-size: 20px; font-weight: 500;">
+        <b>TL;DR:</b>
+        <b>SVGDreamer++</b> comprehensively improves the editability and visual generation quality of SVGDreamer.
+    </div>
 </header>
 <br>
 
@@ -122,104 +142,117 @@
         <div class="card-body x-gradient-block">
             <h2 class="card-title text-center card-title-margin">Abstract</h2>
             <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo
-                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,
-                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate
-                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue
-                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla
-                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,
-                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras
-                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.
-                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+                Recently, text-guided scalable vector graphics (SVG) synthesis has demonstrated significant potential in
+                domains such as iconography and sketching. However, SVGs generated from existing Text-to-SVG methods
+                often lack editability and exhibit deficiencies in visual quality and diversity. In this paper, we
+                propose a novel text-guided vector graphics synthesis method to address these limitations.
+                To enhance the editability of output SVGs, we introduce a <b>Hierarchical Image VEctorization (HIVE)</b>
+                framework that operates at the semantic object level and supervises the optimization of components
+                within the vector object. This approach facilitates the decoupling of vector graphics into distinct
+                objects and component levels. Our proposed HIVE algorithm, informed by image segmentation priors, not
+                only ensures a more precise representation of vector graphics but also enables fine-grained editing
+                capabilities within vector objects.
+                To improve
+                the diversity of output SVGs, we present a <b>Vectorized Particle-based Score Distillation (VPSD)</b>
+                approach.
+                VPSD addresses over-saturation issues in existing methods and enhances sample diversity. A pre-trained
+                reward model is incorporated to re-weight vector particles, improving aesthetic appeal and enabling
+                faster convergence. Additionally, we design a novel <b>adaptive vector primitives control strategy</b>,
+                which
+                allows for the dynamic adjustment of the number of primitives, thereby enhancing the presentation of
+                graphic details. Extensive experiments validate the effectiveness of the proposed method, demonstrating
+                its superiority over baseline methods in terms of editability, visual quality, and diversity. We also
+                show that our new method supports up to six distinct vector styles, capable of generating high-quality
+                vector assets suitable for stylized vector design and poster design.
             </p>
         </div>
     </div>
     <br>
 
     <!-- Online Demo -->
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title card-title-margin">Online Demo</h2>
-            <hr class="body-hr"/>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo
-                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,
-                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate
-                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue
-                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla
-                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,
-                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras
-                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.
-                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
-            </p>
-            <div class="text-center">
-                <figure class="figure">
-                    <img src="./assets/online_demo.png" class="img-thumbnail figure-img img-fluid rounded"
-                         alt="online demo">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-    <br>
+    <!--    <div class="card">-->
+    <!--        <div class="card-body">-->
+    <!--            <h2 class="card-title card-title-margin">Online Demo</h2>-->
+    <!--            <hr class="body-hr"/>-->
+    <!--            <p class="card-text">-->
+    <!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo-->
+    <!--                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,-->
+    <!--                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate-->
+    <!--                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue-->
+    <!--                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla-->
+    <!--                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,-->
+    <!--                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras-->
+    <!--                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.-->
+    <!--                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.-->
+    <!--            </p>-->
+    <!--            <div class="text-center">-->
+    <!--                <figure class="figure">-->
+    <!--                    <img src="./assets/online_demo.png" class="img-thumbnail figure-img img-fluid rounded"-->
+    <!--                         alt="online demo">-->
+    <!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
+    <!--                </figure>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <br>-->
 
     <!-- Video 1 -- video in modal -->
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title card-title-margin">Video<small class="text-body-secondary">(3min)</small></h2>
-            <hr class="body-hr"/>
+    <!--    <div class="card">-->
+    <!--        <div class="card-body">-->
+    <!--            <h2 class="card-title card-title-margin">Video<small class="text-body-secondary">(3min)</small></h2>-->
+    <!--            <hr class="body-hr"/>-->
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <!-- video teaser -->
-                        <img src="./assets/video_teaser.png" class="img-thumbnail figure-img img-fluid rounded"
-                             alt="video teaser">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                            Play Video
-                        </button>
+    <!--            <div class="container text-center">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col">-->
+    <!--                        &lt;!&ndash; video teaser &ndash;&gt;-->
+    <!--                        <img src="./assets/video_teaser.png" class="img-thumbnail figure-img img-fluid rounded"-->
+    <!--                             alt="video teaser">-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col">-->
+    <!--                        &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+    <!--                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"-->
+    <!--                                data-bs-target="#staticBackdrop">-->
+    <!--                            Play Video-->
+    <!--                        </button>-->
 
-                        <!-- Youtube in Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header text-center">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                            <u>Short presentation</u>(3min)
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
-                                            <iframe class="embed-responsive-item text-center"
-                                                    src="https://www.youtube.com/embed/j20MBc1hWGQ"
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    style="width:100%; height: 60em; clip-path:inset(1px 1px);"
-                                                    allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end container-->
-        </div>
-    </div>
-    <br>
+    <!--                        &lt;!&ndash; Youtube in Modal &ndash;&gt;-->
+    <!--                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"-->
+    <!--                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">-->
+    <!--                            <div class="modal-dialog modal-xl">-->
+    <!--                                <div class="modal-content">-->
+    <!--                                    <div class="modal-header text-center">-->
+    <!--                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">-->
+    <!--                                            <u>Short presentation</u>(3min)-->
+    <!--                                        </h1>-->
+    <!--                                        <button type="button" class="btn-close" data-bs-dismiss="modal"-->
+    <!--                                                aria-label="Close"></button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="modal-body">-->
+    <!--                                        <div class="embed-responsive embed-responsive-16by9" style="text-align:center">-->
+    <!--                                            <iframe class="embed-responsive-item text-center"-->
+    <!--                                                    src="https://www.youtube.com/embed/j20MBc1hWGQ"-->
+    <!--                                                    frameborder="0"-->
+    <!--                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+    <!--                                                    style="width:100%; height: 60em; clip-path:inset(1px 1px);"-->
+    <!--                                                    allowfullscreen></iframe>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="modal-footer">-->
+    <!--                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div> &lt;!&ndash; end row&ndash;&gt;-->
+    <!--            </div> &lt;!&ndash; end container&ndash;&gt;-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <br>-->
 
     <!-- Video 2 -- video in HTML -->
     <!--    <div class="card">-->
@@ -242,117 +275,51 @@
     <!--    <br>-->
 
     <!-- Methodology -->
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <h2 class="card-title card-title-margin">Methodology</h2>
             <hr class="body-hr"/>
             <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo
-                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,
-                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate
-                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue
-                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla
-                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,
-                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras
-                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.
-                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+                🚀🚀 <b>SVGDreamer</b> upgrade to &rarr; <b style="color: #7e57c2">SVGDreamer++</b> <br>
+                1. <b>SIVE</b> upgrade to &rarr; <b>HIVE</b> + <b>Adaptive Vector Primitives Control</b> <br>
+                2. <b>VPSD</b> upgrade to &rarr; <b>VPSD</b> + <b>Adaptive Vector Primitives Control</b> <br>
             </p>
             <div class="text-center">
                 <figure class="figure">
                     <img src="assets/method.png" class="figure-img img-fluid rounded" alt="method">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    <figcaption class="figure-caption">
+                        Overview of SVGDreamer++. <br>
+                        Our method consists of two phases: <b>Hierarchical image vectorization</b> (Sec. 4.1) and
+                        optimized synthesis of diverse SVGs via VPSD~(Sec. 3.2).
+                        And an additional module, called <b>Adaptive Vector Primitives
+                        Control</b> (Sec. 4.2), can be plugged into HIVE and VPSD in a
+                        plug-and-play way.
+                        In HIVE we introduced two stages of mask generation (as shown in the dotted box). Coarse mask
+                        generation guided by prompt words and fine-grained mask generation guided by attention
+                        distribution are used to decouple the components of vector graphics.
+                        The result from HIVE can be used as input for further generation of VPSD. We maintain $k$ sets
+                        of SVG parameters in VPSD for obtaining diverse results.
+                        In addition, the brown dotted box represents adaptive vector primitive control technology, which
+                        dynamically builds vector paths based on gradient graphs to improve the quality of SVG
+                        synthesis.
+                    </figcaption>
                 </figure>
             </div>
-        </div>
-    </div>
-    <br>
-
-    <!-- Experiments -->
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title card-title-margin">Experiments</h2>
-            <hr class="body-hr"/>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo
-                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,
-                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate
-                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue
-                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla
-                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,
-                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras
-                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.
-                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
-            </p>
-            <br>
-
-            <!-- Table example -->
-            <table class="table">
-                <thead>
-                <tr class="table-primary">
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <br>
-
-            <div class="text-center">
-                <figure class="figure">
-                    <img src="./assets/experiments.png" class="img-thumbnail figure-img img-fluid rounded"
-                         alt="experiments">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-    <br>
-
-    <!-- Supplementary Material -->
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title card-title-margin">Supplementary Material</h2>
-            <hr class="body-hr"/>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo
-                dapibus sit amet.
-            </p>
         </div>
     </div>
     <br>
 
     <!-- Citation -->
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <h2 class="card-title card-title-margin">Citation</h2>
             <p id="bibtex" class="card-text" style="border: #1a1c20 1px">
-                <code> @article{author20XXtitle,<br>
-                    &nbsp;&nbsp;title={Please cite me},<br>
-                    &nbsp;&nbsp;author={Author, First and Author, Second and Author, Third},<br>
-                    &nbsp;&nbsp;booktitle={arXiv preprint},<br>
-                    &nbsp;&nbsp;year={20XX}<br>
+                <code> @article{xing2024svgdreamer++,<br>
+                    &nbsp;&nbsp;title={SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG Generation},<br>
+                    &nbsp;&nbsp;author={Xing, Ximing and Yu, Qian and Wang, Chuang and Zhou, Haitao and Zhang, Jing and
+                    Xu, Dong},<br>
+                    &nbsp;&nbsp;journal={arXiv preprint arXiv:2411.17832},<br>
+                    &nbsp;&nbsp;year={2024}<br>
                     }
                 </code>
             </p>
@@ -384,10 +351,11 @@
     <br>
 
     <!-- Acknowledgements -->
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <h4 class="card-title card-title-margin">Acknowledgements</h4>
-            <p class="card-text">We thank <a href="https://ximinng.github.io/">Ximing Xing</a> for providing us with the source code of the web page to help us
+            <p class="card-text">We thank <a href="https://ximinng.github.io/">Ximing Xing</a> for providing us with the
+                source code of the web page to help us
                 build the project home page.</p>
         </div>
     </div>
@@ -400,13 +368,15 @@
         <div class="row align-items-center">
             <!-- left layout -->
             <div class="col-12 col-md-6 text-md-start text-center">
-                <p class="footer-title mb-0">Title</p>
+                <p class="footer-title mb-0">SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG
+                    Generation</p>
             </div>
             <!-- right layout -->
             <div class="col-12 col-md-6 text-md-end text-center">
                 <p class="footer-text mb-0">
                     This webpage template was originally made by
-                    <a href="https://github.com/ximinng/GithubPages-Template" class="link-primary text-decoration-none">Ximing Xing</a>.
+                    <a href="https://github.com/ximinng/GithubPages-Template" class="link-primary text-decoration-none">Ximing
+                        Xing</a>.
                 </p>
             </div>
         </div>
