@@ -1,6 +1,7 @@
-@article{xing2024svgdreamer++,
-  title={SVGDreamer++: Advancing Editability and Diversity in Text-Guided SVG Generation},
+@article{xing2025svgdreamer++,
+  title={Svgdreamer++: Advancing editability and diversity in text-guided svg generation},
   author={Xing, Ximing and Yu, Qian and Wang, Chuang and Zhou, Haitao and Zhang, Jing and Xu, Dong},
-  journal={arXiv preprint arXiv:2411.17832},
-  year={2024}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
 }
